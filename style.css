@@ -1,0 +1,184 @@
+*{
+    background: #f5ccf5;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+main{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.text-area{
+    background: #f5ccf5;
+    height: 400px;
+    font-size: 32px;
+    border: none;
+    color: #091b58 ;
+    margin-top: 50px;
+    text-transform: lowercase;
+}
+::placeholder { color: #091b58; }
+.cuadro-texto:focus {
+    outline: none;
+}
+.informacion{
+    color: #495057;
+    font-size:18px;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.boton-desencriptar{
+    background-color: whitesmoke;
+    border: 1px solid #2b707c;
+    border-radius: 24px;
+    color: black;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 32px;
+}
+.boton-desencriptar:hover{
+    background-color: #e7eb11;
+    border: 1px solid #63abb8;
+    font-weight: bolder;
+}
+.boton-desencriptar:active{
+    background-color: #14515c;
+    border: 1px solid #14515c;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.boton-encriptar{
+    background-color: #e7eb11;
+    border: 1px solid #2b707c;
+    border-radius: 24px;
+    color: #091b58;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 32px;
+}
+.boton-encriptar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #63abb8;
+    font-weight: bold;
+}
+.boton-encriptar:active{
+    background-color: #14515c;
+    border: 1px solid #14515c;
+    color: #E1D7C6;
+    font-weight: bolder;
+}
+.mensaje{
+    background: whitesmoke;
+    background-image: url(images/Homer.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #091b58;
+    margin-left: 98px;
+    margin-top: 50px;
+    padding-left: 20px;
+    text-transform: lowercase;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.info_copiar{
+    color: #091b58;
+    font-size:12px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.boton-copiar{
+    background-color: #e7eb11;
+    border: 1px solid #14515c;
+    border-radius: 24px;
+    color: black;
+    cursor: pointer;
+    font-size: 32px;
+    height: 67px;
+    margin-left: 130px;
+    margin-top: 30px;
+    position: absolute;
+    width: 328px; 
+}
+
+.boton-copiar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #cac9c5;
+    font-weight: bolder;
+}
+
+.boton-copiar:active{
+    background-color: #14515c;
+    border: 1px solid #cac9c5;
+    color: whitesmoke;
+}
+
+footer{
+    text-align: center;
+    margin-top: 150px;
+}
+.creador{
+    font-size: small;
+    font-weight: bold;
+}
+.linkedin, .gitHub{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+@media screen and (max-width:480px){
+    .logo{
+        width: 20%;
+        padding: 20px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-area{
+        font-size: 25px;
+        width: 300px;
+    }
+    .mensaje{
+        font-size: 25px;
+        width: 300px;
+        margin-right: 70px;
+    }
+    .botones{
+        margin: 0 auto;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        width: 150px;
+        height: 54px;
+        font-size: 20px;
+    }
+    .boton-copiar{
+        margin-left: 180px;
+        width: 150px;
+        height: 54px;
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    } 
+}
